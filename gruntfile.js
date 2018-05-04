@@ -15,7 +15,8 @@ module.exports = function (grunt) {
 				},
 				my_target: {
 					files: {
-						'dist/scrolling.min.js': 'src/scrolling.js'
+						'dist/scrolling.min.js': 'src/scrolling.js',
+						'dist/intersection.min.js': 'src/intersection.js'
 					}
 				}
 			}
