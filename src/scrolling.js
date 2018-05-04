@@ -31,7 +31,7 @@ Hellofront.scrollTo = function (target, offset, speed) {
 		offset += body.data('scrollOffset');
 	}
 
-	$('html, body').animate({
+	$('html, body').stop().animate({
 		scrollTop: target.offset().top + offset
 	}, speed);
 };
