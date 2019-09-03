@@ -31,21 +31,25 @@ Hellofront.scrollTo = function (target, offset, speed) {
 		offset += body.data('scrollOffset');
 	}
 
-	$('html, body').stop().animate({
-		scrollTop: target.offset().top + offset
-	}, speed);
+	if (target.length) {
+		$('html, body').stop().animate({
+			scrollTop: target.offset().top + offset
+		}, speed);
+	}
 };
 
 /**
  * Scroll to target on click
  */
 $(document).on('click', '[data-scroll-to]', function (e) {
-	e.preventDefault();
-
 	var element = $(this);
 	var target = element.data('scrollTo');
 	var offset = (element.attr('data-scroll-offset')) ? element.data('scrollOffset') : undefined;
 	var speed = (element.attr('data-scroll-speed')) ? element.data('scrollSpeed') : undefined;
+
+	if ($(target).length) {
+		e.preventDefault();
+	}
 
 	Hellofront.scrollTo(target, offset, speed);
 });
