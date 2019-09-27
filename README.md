@@ -34,3 +34,9 @@ Download this plugin direct in latest version from GitHub repository.
 - Adds new events for elements intersection
 - Events: `intersection.in` and `intersection.out`
 - For better browsers compatibility use in your project intersection-observer.js (https://github.com/w3c/IntersectionObserver)
+
+## Selectors
+- Contains pseudo selector
+
+## Properties
+- Method to get dimensions of hidden element
