@@ -20,11 +20,11 @@
   "homepage": "https://utilities.pavelkovar.cz/",
   "dependencies": {
     "intersection-observer": "^0.5.1",
-    "jquery": "1.9.1 - 3"
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.0",
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "jit-grunt": "^0.10.0"
