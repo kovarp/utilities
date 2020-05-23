@@ -1,8 +1,8 @@
 /**
  * Properties utilities (https://github.com/kovarp/utilities)
- * Version 1.0.2
+ * Version 1.0.4
  *
- * Copyright 2019 Pavel Kovář - Frontend developer [www.pavelkovar.cz]
+ * Copyright 2020 Pavel Kovář - Frontend developer [www.pavelkovar.cz]
  * @license: MIT (https://github.com/kovarp/utilities/blob/master/LICENSE)
  */
 

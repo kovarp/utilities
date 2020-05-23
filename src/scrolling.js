@@ -1,8 +1,8 @@
 /**
  * Scrolling utilities (https://github.com/kovarp/utilities)
- * Version 1.0.2
+ * Version 1.0.4
  *
- * Copyright 2019 Pavel Kovář - Frontend developer [www.pavelkovar.cz]
+ * Copyright 2020 Pavel Kovář - Frontend developer [www.pavelkovar.cz]
  * @license: MIT (https://github.com/kovarp/utilities/blob/master/LICENSE)
  */
 
@@ -17,8 +17,9 @@ var Hellofront = Hellofront || {};
  * @param target jQuery object or string selector of target element
  * @param offset pixel added to target scroll position
  * @param speed time in ms used for smooth scroll speed
+ * @param completeListener function which is called after scroll
  */
-Hellofront.scrollTo = function (target, offset, speed) {
+Hellofront.scrollTo = function (target, offset, speed, completeListener) {
 	if (!(target instanceof jQuery)) {
 		target = $(target);
 	}
@@ -34,7 +35,14 @@ Hellofront.scrollTo = function (target, offset, speed) {
 	if (target.length) {
 		$('html, body').stop().animate({
 			scrollTop: target.offset().top + offset
-		}, speed);
+		},
+		speed).promise().then(function() {
+			if (completeListener === 'undefined') {
+				return;
+			}
+
+			completeListener();
+		});
 	}
 };
 
