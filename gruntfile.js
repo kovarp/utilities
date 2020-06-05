@@ -18,7 +18,8 @@ module.exports = function (grunt) {
 						'dist/scrolling.min.js': 'src/scrolling.js',
 						'dist/intersection.min.js': 'src/intersection.js',
 						'dist/selectors.min.js': 'src/selectors.js',
-						'dist/properties.min.js': 'src/properties.js'
+						'dist/properties.min.js': 'src/properties.js',
+						'dist/math.min.js': 'src/math.js'
 					}
 				}
 			}
