@@ -19,7 +19,8 @@ module.exports = function (grunt) {
 						'dist/intersection.min.js': 'src/intersection.js',
 						'dist/selectors.min.js': 'src/selectors.js',
 						'dist/properties.min.js': 'src/properties.js',
-						'dist/math.min.js': 'src/math.js'
+						'dist/math.min.js': 'src/math.js',
+						'dist/browsers.min.js': 'src/browsers.js'
 					}
 				}
 			}
