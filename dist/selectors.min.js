@@ -1,6 +1,6 @@
 /**
  * Selectors utilities (https://github.com/kovarp/utilities)
- * Version 1.0.4
+ * Version 1.0.5
  *
  * Copyright 2020 Pavel Kovář - Frontend developer [www.pavelkovar.cz]
  * @license: MIT (https://github.com/kovarp/utilities/blob/master/LICENSE)
